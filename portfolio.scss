@@ -1,30 +1,5 @@
-* {
-  padding: 0;
-  margin: 0;
-  background-color: red;
-  }
-  nav {
-    margin-bottom: 25px;
+@use "./styles/components/bounceheader.scss";
+@use "./styles/components/profilebar.scss";
+@use "./styles/components/app.module.scss";
+@use "./styles/components/project.scss";
 
-  & > ul {
-    list-style-type: none;
-    border: 3px solid brown;
-    height: 50px;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-
-    & > li > a {
-      color: blue;
-      text-decoration: none;
-
-      &:hover {
-        color: blueviolet;
-        text-decoration: underline;
-      }
-    }
-  }
-
-
-}
-  

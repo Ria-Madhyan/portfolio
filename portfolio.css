@@ -1,19 +1,189 @@
-nav  {
-  margin-bottom:  25px;
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@1,200;1,600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital@1&display=swap");
+.bounce {
+  height: 50px;
+  overflow: hidden;
+  position: relative;
+  background-color: aqua;
+  color: brown;
+  border: 1px solid black;
+  font-family: Source Sans Pro, sans-serif;
+  font-weight: bold;
+  font-size: xx-large;
 }
-nav  > ul {
-  list-style-type:  none;
-  border:  3px solid brown;
-  height:  50px;
-  display:  flex;
-  justify-content:  space-evenly;
-  align-items:  center;
+.bounce p {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  line-height: 50px;
+  text-align: center;
+  -moz-transform: translateX(50%);
+  -webkit-transform: translateX(50%);
+  transform: translateX(50%);
+  -moz-animation: bouncing-text 5s linear infinite alternate;
+  -webkit-animation: bouncing-text 5s linear infinite alternate;
+  animation: bouncing-text 10s linear infinite alternate;
 }
-nav  > ul > li > a {
-  color:  blue;
-  text-decoration:  none;
+
+@-moz-keyframes bouncing-text {
+  0% {
+    -moz-transform: translateX(50%);
+  }
+  100% {
+    -moz-transform: translateX(-50%);
+  }
 }
-nav  > ul > li > a:hover {
-  color:  blueviolet;
-  text-decoration:  underline;
+@-webkit-keyframes bouncing-text {
+  0% {
+    -webkit-transform: translateX(50%);
+  }
+  100% {
+    -webkit-transform: translateX(-50%);
+  }
+}
+@keyframes bouncing-text {
+  0% {
+    -moz-transform: translateX(50%);
+    -webkit-transform: translateX(50%);
+    transform: translateX(37%);
+  }
+  100% {
+    -moz-transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-37%);
+  }
+}
+.myface {
+  border-radius: 130px 10px;
+  border: 2px solid black;
+  height: 300px;
+  margin-top: 10px;
+}
+
+.profilebar_profilebar__sub {
+  position: fixed;
+  width: 25vw;
+  min-width: 180px;
+  height: 100%;
+  display: block;
+  box-sizing: border-box;
+  background-color: #72da72;
+  text-align: center;
+  color: black;
+}
+
+.profilebar_facepic_face {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  animation: profilebar_facepic_face 0.5s cubic-bezier(0.39, 0.575, 0.565, 1) 0s 1 normal both;
+  animation-play-state: running;
+}
+
+@keyframes profilebar_facepic_face {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.profilebar_name__name {
+  margin-top: 10px;
+  padding-bottom: 5px;
+  animation: profilebar_name__name 1s cubic-bezier(0.39, 0.575, 0.565, 1) 0s 1 normal both;
+  animation-play-state: running;
+}
+
+h2 {
+  display: block;
+  font-size: 1.5em;
+  margin-block-start: 0.83em;
+  margin-block-end: 0.83em;
+  font-weight: bold;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
+.profilebar_skillsgrid__icon {
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 10px;
+  width: 50%;
+  animation: profilebar_skillsgrid__icon 1s cubic-bezier(0.39, 0.575, 0.565, 1) 0s 1 normal both;
+  animation-play-state: running;
+  color: black;
+  text-align: center;
+}
+
+@keyframes profilebar_skillsgrid__icon {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+div {
+  display: block;
+}
+
+.app_app__first {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  color: #131212;
+  background-color: #f3f1ee;
+}
+
+.app_mainContent__3N2BW {
+  width: 100%;
+  margin-left: 28vw;
+}
+
+section {
+  display: block;
+}
+
+.project1 {
+  grid-area: "project1";
+}
+.project1__img1 {
+  border-radius: 15px 50px;
+  border: 2px solid black;
+  height: 100px;
+}
+
+.project2 {
+  grid-area: "project2";
+}
+.project2__img1 {
+  border-radius: 15px 50px;
+  border: 2px solid black;
+  height: 100px;
+}
+
+.project3 {
+  grid-area: "project3";
+}
+.project3__img1 {
+  border-radius: 15px 50px;
+  border: 2px solid black;
+  height: 100px;
+}
+
+.project4 {
+  grid-area: "project4";
+}
+.project4__img1 {
+  border-radius: 15px 50px;
+  border: 2px solid black;
+  height: 100px;
+}
+
+.projectspage {
+  display: grid;
+  grid-template-areas: "project1 project2" "project3 project4";
 }
