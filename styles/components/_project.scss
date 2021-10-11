@@ -1,0 +1,42 @@
+.project1 {
+  grid-area: "project1";
+  &__img1 {
+    border-radius: 15px 50px;
+    border: 2px solid black;
+    height: 100px;
+  }
+}
+
+.project2 {
+  grid-area: "project2";
+  &__img1 {
+    border-radius: 15px 50px;
+    border: 2px solid black;
+    height: 100px;
+  }
+}
+
+.project3 {
+  grid-area: "project3";
+  &__img1 {
+    border-radius: 15px 50px;
+    border: 2px solid black;
+    height: 100px;
+  }
+}
+
+.project4 {
+  grid-area: "project4";
+  &__img1 {
+    border-radius: 15px 50px;
+    border: 2px solid black;
+    height: 100px;
+  }
+}
+
+.projectspage {
+  display: grid;
+  grid-template-areas: 
+  "project1 project2"
+  "project3 project4";
+}

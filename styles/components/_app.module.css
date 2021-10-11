@@ -1,0 +1,16 @@
+.app_app__first {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  color: #131212;
+  background-color: #f3f1ee;
+}
+
+.app_mainContent__3N2BW {
+  width: 100%;
+  margin-left: 28vw;
+}
+
+section {
+  display: block;
+}
